@@ -1,0 +1,717 @@
+@font-face {
+  src: url(fonts/Montserrat-Regular.ttf);
+  font-family: "Montserrat", sans-serif;
+}
+@font-face {
+  src: url(fonts/Merriweather-Regular.ttf);
+  font-family: "Merriweather", serif;
+}
+:root {
+  /* This is for the headers */
+  --txt-font-family: "Montserrat", sans-serif;
+  /* Thi is fot the norma text letters */
+  --txt2-font-family: "Merriweather", serif;
+}
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+/*for the navigation bar  */
+nav {
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+  width: 100%;
+}
+nav div {
+  flex: 1;
+}
+/* For the logo image */
+.logo img {
+  margin-top: 25px;
+  margin-left: 145px;
+  float: left;
+  margin-right: 5px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+/* For the logo ends here */
+.nav-options {
+  background-color: #f94f4f;
+}
+.hand {
+  display: none;
+}
+.nav-options ul {
+  flex-wrap: wrap;
+  margin-top: 20px;
+  float: right;
+  margin-right: 200px;
+}
+.nav-options ul li {
+  float: left;
+  margin: 20px;
+}
+.nav-options ul li a {
+  color: #ccd1e4;
+  font-family: var(--txt-font-family);
+  position: relative;
+}
+.nav-options ul li a::after {
+  content: " ";
+  width: 0;
+  height: 3px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  background-color: #fff;
+  transform: translateX(-50%);
+  transition: width 0.3s;
+}
+.nav-options ul li a:hover::after {
+  width: 100%;
+}
+/* For the 1st header */
+.brand {
+  display: flex;
+  flex-direction: row;
+  height: 600px;
+  text-align: left;
+}
+.brand-agent {
+  z-index: 1;
+  flex: 1;
+  align-self: center;
+}
+.agent-word {
+  margin-right: -200px;
+  margin-left: 160px;
+}
+.agent-word h1 {
+  font-family: var(--txt-font-family);
+  line-height: 60px;
+  width: 90%;
+  font-size: 50px;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+.agent-word p {
+  line-height: 25px;
+  font-family: var(--txt2-font-family);
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.button a {
+  font-family: var(--txt2-font-family);
+  width: 80px;
+  padding: 15px 20px;
+  background-color: #f94f4f;
+  margin-top: 10px;
+  display: block;
+  color: #fff;
+}
+.agent-img {
+  flex: 1 30%;
+  background-image: linear-gradient(
+      to left,
+      rgba(245, 246, 252, 0),
+      rgba(255, 255, 255, 1)
+    ),
+    url("img/office2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* For the  2nd section page */
+.design {
+  display: flex;
+  flex-direction: row;
+  height: 800px;
+}
+
+.img {
+  flex: 1;
+  background-image: url(img/design.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.strate {
+  height: 550px;
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  color: #fff;
+  background-color: #090910;
+}
+.s-letter {
+  margin-left: 150px;
+}
+.s-letter h2 {
+  font-family: var(--txt2-font-family);
+  font-size: 40px;
+  width: 40%;
+  margin-bottom: 30px;
+}
+.s-letter span {
+  color: #f94f4f;
+}
+.s-letter p {
+  color: #ccd1e4;
+  line-height: 25px;
+  font-family: var(--txt2-font-family);
+  width: 63%;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+.s-letter a {
+  color: #f94f4f;
+  text-underline-offset: 8px;
+  text-decoration: #f94f4f 2px underline;
+  font-family: var(--txt-font-family);
+  font-size: 15px;
+}
+/* For the 3rd section page */
+.approach {
+  display: flex;
+  flex-direction: row;
+  height: 650px;
+}
+.approach h1 {
+  z-index: 1;
+  font-size: 45px;
+  margin-left: 200px;
+  margin-right: -100px;
+  margin-top: 100px;
+  width: 35%;
+  font-family: var(--txt-font-family);
+}
+.steps {
+  flex: 1 70%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #f94f4f;
+  margin-top: -250px;
+}
+.step-forward {
+  margin-left: 300px;
+  align-items: center;
+  display: inline-flex;
+  flex-direction: column;
+}
+.forward {
+  margin-bottom: 50px;
+}
+.forward span {
+  margin-right: -30px;
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 50px;
+  font-family: var(--txt-font-family);
+}
+.forward h3 {
+  margin-left: -35px;
+  font-weight: 800;
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-family: var(--txt-font-family);
+}
+.forward p {
+  color: #ccd1e4;
+  line-height: 25px;
+  width: 65%;
+  font-size: 16px;
+  font-family: var(--txt2-font-family);
+}
+/* For the 4th section page */
+.brand-name {
+  display: flex;
+  flex-direction: row;
+  height: 600px;
+}
+.name {
+  z-index: 1;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #090910;
+  flex: 1;
+  height: 400px;
+  margin-right: -180px;
+}
+.name-next {
+  margin-left: 210px;
+}
+.name-next h1 {
+  width: 70%;
+  font-size: 40px;
+  font-family: var(--txt-font-family);
+}
+/* This is where the arrow animation started */
+.ga {
+  margin-top: 50px;
+  margin-left: 53px;
+}
+.gallery {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.gallery li {
+  width: 40px;
+  height: 40px;
+  border-style: solid;
+  border-color: #f94f4f;
+  margin: 0 10px;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+.gallery li:hover {
+  border-color: blue;
+}
+.gallery li span {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: 3px solid #f94f4f;
+  transition: 0.5s;
+}
+.gallery li.next:hover span {
+  right: 15%;
+}
+/* For the right arrow */
+.gallery li.next span {
+  top: 50%;
+  right: 20%;
+  transform: translateY(-50%) rotate(-45deg);
+  border-left: none;
+  border-top: none;
+}
+.gallery li.next span::before {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 3px;
+  background: #f94f4f;
+  transform-origin: right;
+  transform: rotate(45deg) translate(-3px, 19px) scaleX(0);
+  transition: 0.5s;
+}
+.gallery li.next:hover span::before {
+  transform: rotate(45deg) translate(-3px, 19px) scaleX(1);
+}
+/* For the left arrow */
+.gallery li.prev span {
+  top: 50%;
+  left: 20%;
+  transform: translateY(-50%) rotate(-45deg);
+  border-right: none;
+  border-bottom: none;
+}
+.gallery li.prev:hover span {
+  left: 15%;
+}
+.gallery li.prev span::before {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 3px;
+  background: #f94f4f;
+  transform-origin: left;
+  transform: rotate(45deg) translate(-2px, -1px) scaleX(0);
+  transition: 0.5s;
+}
+.gallery li.prev:hover span::before {
+  transform: rotate(45deg) translate(-2px, -1px) scaleX(1);
+}
+/* This is where the arrow animation ends */
+.brand-img {
+  flex: 1 10%;
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: right;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(245, 246, 252, 0),
+      rgba(0, 0, 0, 0.9)
+    ),
+    url(img/read.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.road {
+  margin-right: 100px;
+  margin-bottom: 50px;
+}
+.road h3 {
+  font-size: 20px;
+  font-family: var(--txt-font-family);
+  color: #fff;
+  margin-bottom: 15px;
+}
+.road p {
+  font-family: var(--txt2-font-family);
+  font-size: 17px;
+  color: #ccd1e4;
+}
+/* For the footer */
+footer {
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 300px;
+}
+footer h1 {
+  font-size: 40px;
+  font-family: var(--txt-font-family);
+  width: 35%;
+}
+.a-quote a {
+  font-family: var(--txt-font-family);
+  width: 130px;
+  padding: 15px 12px;
+  background-color: #f94f4f;
+  text-align: center;
+  display: block;
+  color: #fff;
+}
+/* For the scrolling animation */
+.fade-in {
+  opacity: 0;
+  transition: opacity 500ms ease-in;
+}
+.fade-in.appear {
+  opacity: 1;
+}
+.from-left {
+  transform: translateX(-50%);
+}
+.from-right {
+  transform: translateX(50%);
+}
+.from-left,
+.from-right {
+  transition: opacity 400ms ease-in, transform 600ms ease-in;
+  opacity: 0;
+}
+.from-left.appear,
+.from-right.appear {
+  transform: translateX(0);
+  opacity: 1;
+}
+/* For the tablet view */
+@media only screen and (max-width: 820px) and (min-width: 481px) {
+  /* For the logo image */
+  .logo img {
+    margin-left: 40px;
+  }
+  /* For the logo ends here */
+  .nav-options ul {
+    margin-top: 30px;
+    margin-right: 50px;
+  }
+  .nav-options ul li {
+    margin: 10px;
+  }
+  /* For the 1st header */
+  .brand {
+    height: 500px;
+  }
+  .agent-word {
+    text-align: left;
+    margin-right: -250px;
+    margin-left: 50px;
+  }
+  .agent-word h1 {
+    line-height: 50px;
+    width: 90%;
+    font-size: 45px;
+  }
+  .agent-word p {
+    width: 85%;
+  }
+  /* For the  2nd section page */
+  .design {
+    height: 600px;
+  }
+  .strate {
+    height: 500px;
+  }
+  .s-letter {
+    margin-left: 60px;
+  }
+  .s-letter h2 {
+    font-size: 35px;
+    margin-bottom: 25px;
+  }
+  .s-letter p {
+    width: 70%;
+    margin-bottom: 25px;
+  }
+  .s-letter a {
+    font-size: 13px;
+  }
+  /* For the 3rd section page */
+  .approach h1 {
+    font-size: 30px;
+    margin-left: 45px;
+    margin-right: 0px;
+    width: 37%;
+  }
+  .steps {
+    flex: 1;
+    margin-top: -100px;
+  }
+  .step-forward {
+    margin-left: 50px;
+  }
+  .forward {
+    margin-bottom: 20px;
+  }
+  .forward span {
+    margin-right: -65px;
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 60px;
+  }
+  .forward h3 {
+    margin-left: -15px;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  .forward p {
+    line-height: 22px;
+    width: 78%;
+  }
+  /* For the 4th section page */
+  .brand-name {
+    height: 400px;
+  }
+  .name {
+    flex: 1;
+    height: 300px;
+    margin-right: -50px;
+  }
+  .name-next {
+    margin-left: 50px;
+  }
+  .name-next h1 {
+    width: 80%;
+    font-size: 35px;
+  }
+  .brand-img {
+    flex: 1 10%;
+  }
+  .road {
+    margin-right: 50px;
+    margin-bottom: 30px;
+  }
+  .road h3 {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .road p {
+    font-size: 12px;
+  }
+  /* For the footer */
+  footer {
+    height: 300px;
+  }
+  footer {
+    height: 200px;
+  }
+  footer h1 {
+    margin-right: 100px;
+    font-size: 30px;
+    width: 40%;
+  }
+}
+/* For the mobile view */
+@media only screen and (max-width: 414px) and (min-width: 320px) {
+  /* For the logo image */
+  .logo img {
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 0px;
+    width: 40px;
+    height: 40px;
+  }
+  /* For the logo ends here */
+  .nav-options {
+    background-color: #fff;
+  }
+  .nav-options button {
+    float: right;
+    margin-top: 30px;
+    margin-right: 20px;
+  }
+  .hand {
+    display: block;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    color: #090910;
+    font-size: 20px;
+  }
+  .hand:focus {
+    outline: none;
+  }
+  .nav-options ul {
+    margin-right: 0px;
+    flex-direction: column;
+    display: none;
+    width: 100%;
+  }
+  .nav-options ul li a {
+    background-color: #f94f4f;
+    color: #090910;
+  }
+  .nav-ul.show {
+    display: flex;
+  }
+
+  /* For the 1st header */
+  .brand {
+    flex-direction: column-reverse;
+    height: 600px;
+    text-align: left;
+  }
+  .brand-agent {
+    flex: 1 30%;
+    display: inline-flex;
+    align-items: center;
+  }
+  .agent-word {
+    margin-right: 0px;
+    margin-left: 20px;
+  }
+  .agent-word h1 {
+    line-height: 27px;
+    width: 70%;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .agent-word p {
+    word-spacing: 2px;
+    width: 80%;
+    line-height: 25px;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .agent-img {
+    flex: 1;
+    background-image: url("img/office2.jpg");
+  }
+  /* For the  2nd section page */
+  .design {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+  }
+  .strate {
+    height: 0px;
+    flex: 1 20%;
+  }
+  .s-letter {
+    margin-left: 20px;
+  }
+  .s-letter h2 {
+    font-size: 30px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .s-letter p {
+    color: #ccd1e4;
+    width: 72%;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  /* For the 3rd section page */
+  .approach {
+    flex-direction: column;
+    height: 750px;
+  }
+  .approach h1 {
+    font-size: 30px;
+    margin-left: 35px;
+    margin-right: 0px;
+    margin-top: 50px;
+    color: #fff;
+    width: 70%;
+  }
+  .steps {
+    margin-top: -152px;
+  }
+  .step-forward {
+    margin-top: 150px;
+    margin-left: 20px;
+  }
+  .forward {
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
+  .forward span {
+    margin-right: -55px;
+  }
+  .forward h3 {
+    margin-left: -10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .forward p {
+    width: 70%;
+  }
+  /* For the 4th section page */
+  .brand-name {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 600px;
+  }
+  .name {
+    z-index: 0;
+    height: 0px;
+    margin-right: 0px;
+  }
+  .name-next {
+    margin-left: 30px;
+  }
+  .name-next h1 {
+    width: 90%;
+    font-size: 30px;
+  }
+  .road {
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  .road h3 {
+    font-size: 15px;
+  }
+  .road p {
+    font-size: 12px;
+  }
+  /* For the footer */
+  footer {
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+  }
+  footer h1 {
+    font-size: 30px;
+    font-family: var(--txt-font-family);
+    width: 85%;
+  }
+  .a-quote a {
+    margin-right: 200px;
+  }
+}
